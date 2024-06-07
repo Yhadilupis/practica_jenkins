@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 
-app.get('/api/v1/welcome', (req, res) => {
+app.get('/api/v1/Bienvenido', (req, res) => {
   res.status(200).json({ message: 'Welcome :3!!!' });
 });
 
