@@ -1,10 +1,10 @@
 const request = require('supertest');
 const app = require('../../app.js');
 
-describe('GET /api/v1/hello', () => {
+describe('GET /hello', () => {
   it('responds with Welcome message', (done) => {
     request(app)
-      .get('/api/v1/hello')
+      .get('/hello')
       .expect('Content-Type', /json/)
       .expect(200)
       .expect((res) => {
